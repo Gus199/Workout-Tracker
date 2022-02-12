@@ -21,8 +21,9 @@
   },
   "homepage": "https://github.com/Gus199/Workout-Tracker#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.2",
-    "mongoose": "^6.1.7",
+    "mongoose": "^6.2.1",
     "morgan": "^1.10.0"
   }
 }

@@ -1,11 +1,15 @@
 const mongoose = require('mongoose');
 const db = require('../models');
 
-// mongoose.connect('mongodb://localhost/workout', {
-//   useNewUrlParser: true,
-//   // useFindAndModify: false,
-//   // useUnifiedTopology: true,
-// });
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/workout_tracker',
+  {
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
+    useCreateIndex: true,
+    // useFindAndModify: false
+  }
+);
 
 const workoutSeed = [
   {
@@ -117,6 +121,14 @@ const workoutSeed = [
         type: 'resistance',
         name: 'Military Press',
         duration: 20,
+        weight: 300,
+        reps: 10,
+        sets: 4,
+      },
+      {
+        type: 'resistance',
+        name: 'Military Press',
+        duration: 10,
         weight: 300,
         reps: 10,
         sets: 4,
