@@ -22,5 +22,5 @@ The application is a blog built using with the use of MongoDB as a nosql databas
 There a no plans for public contribution at this time.
 
 # Questions 
-* If you have any questions, email me at
+* If you have any questions, email me at augustine2903a@gmail.com
 * Checkout my GitHub profile
